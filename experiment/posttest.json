@@ -1,39 +1,102 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "What is the primary purpose of the ion exchange column in this experiment after completion?",
+    "answers": {
+      "a": "Increase water hardness",
+      "b": "Monitor pH levels",
+      "c": "Soften water",
+      "d": "Enhance water color"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What is the expected outcome of successful ion exchange in terms of water quality?",
+    "answers": {
+      "a": "Increased turbidity",
+      "b": "Enhanced color",
+      "c": "Decreased hardness",
+      "d": "Higher pH levels"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "How does the efficiency of the ion exchange column affect the need for resin regeneration?",
+    "answers": {
+      "a": "No effect",
+      "b": "Decreases the need for regeneration",
+      "c": "Increases the need for regeneration",
+      "d": "Alters water clarity"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What testing method is appropriate for verifying the effectiveness of resin regeneration?",
+    "answers": {
+      "a": "pH titration",
+      "b": "Conductivity measurement",
+      "c": "Turbidity analysis",
+      "d": "EDTA titration"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "What role does the resin play in the ion exchange column post-experiment?",
+    "answers": {
+      "a": "Attracting and exchanging ions",
+      "b": "Filtering impurities",
+      "c": "Increasing water hardness",
+      "d": "Enhancing water clarity"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Why is it crucial to continue monitoring the ion exchange column even after the experiment is completed?",
+    "answers": {
+      "a": "To increase water hardness",
+      "b": "To ensure resin purity",
+      "c": "To detect any operational issues",
+      "d": "To stabilize pH levels"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In the context of water softening, what is the significance of maintaining proper flow rates through the ion exchange column?",
+    "answers": {
+      "a": "Enhances resin regeneration",
+      "b": "Improves water clarity",
+      "c": "Ensures optimal ion exchange",
+      "d": "Increases water hardness"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "During post-experiment analysis, what would a decrease in hardness levels in the effluent indicate?",
+    "answers": {
+      "a": "Resin exhaustion",
+      "b": "Successful ion exchange",
+      "c": "Insufficient flow rates",
+      "d": "Increased turbidity"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What precautions should be taken when handling the ion exchange resin post-experiment?",
+    "answers": {
+      "a": "None required",
+      "b": "Use of personal protective equipment",
+      "c": "Increase water hardness",
+      "d": "Disposal in regular waste bins"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "How does the removal of hardness through ion exchange impact the maintenance of appliances such as water heaters and pipes in the long run?",
+    "answers": {
+      "a": "Increases scaling",
+      "b": "Decreases scaling",
+      "c": "No effect on scaling",
+      "d": "Enhances water color"
+    },
+    "correctAnswer": "b"
+  }
+]
