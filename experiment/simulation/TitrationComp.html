@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titration Results</title>
+  <link rel="stylesheet" href="css/Other.css">
+    <style>
+        body {
+      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+      /* background-color: #f4f4f4; */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-left: 10%;
+      margin-right: 0;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f5f5f5;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>Your Titration is Finished</h1>
+    <p>To determine the hardness of water sample before and after passing the water sample from ion-exchange column.</p>
+  </div>
+
+  <h3>Results</h3>
+
+  <div id="resultsArea">
+    <p>Loading results...</p>
+  </div>
+
+  <div class="controls">
+    <button class="mybutton" id="replayBtn">Replay</button>
+  </div>
+
+  <script src="js/dataStorage.js"></script>
+  <script>
+    function renderResults(results) {
+      if (!results) {
+        document.getElementById('resultsArea').innerHTML = '<p>No results found. Please complete the experiment first.</p>';
+        return;
+      }
+
+      const before = results.hardnessBefore;
+      const after = results.hardnessAfter;
+      const reduced = results.hardnessReduced;
+
+      const html = `
+        <table>
+          <thead>
+            <tr>
+              <th>Hardness</th>
+              <th>Volume Of Solution Taken</th>
+              <th>Volume Result Used</th>
+              <th>Normality of water sample (N)</th>
+              <th>Hardness in ppm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Before passing the ion-exchange column (B)</td>
+              <td>${Number(before.volume_taken).toFixed(2)}</td>
+              <td>${Number(before.volume_used).toFixed(2)}</td>
+              <td>${Number(before.normality).toFixed(3)}</td>
+              <td>${Number(before.ppm).toFixed(2)}</td>
+            </tr>
+            <tr>
+              <td>After passing the ion-exchange column (A)</td>
+              <td>${Number(after.volume_taken).toFixed(2)}</td>
+              <td>${Number(after.volume_used).toFixed(2)}</td>
+              <td>${Number(after.normality).toFixed(3)}</td>
+              <td>${Number(after.ppm).toFixed(2)}</td>
+            </tr>
+            <tr>
+              <td>Hardness Reduced</td>
+              <td colspan="3" style="text-align:center;">(B - A)</td>
+              <td>${Number(reduced).toFixed(2)}</td>
+            </tr>
+          </tbody>
+        </table>
+      `;
+
+      document.getElementById('resultsArea').innerHTML = html;
+    }
+
+    // Try to get compiled results; if not present, compute them now
+    let compiled = DataStorage.getCompiledResults();
+    if (!compiled) {
+      compiled = DataStorage.compileResults();
+    }
+
+    renderResults(compiled);
+
+    document.getElementById('replayBtn').addEventListener('click', () => {
+      // Clear stored data and go back to start
+      DataStorage.clear();
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
