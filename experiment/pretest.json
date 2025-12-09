@@ -1,39 +1,103 @@
-{
-  "version": 2.0,
-  "questions": [
+[
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary purpose of an ion exchange column in this experiment?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increase water hardness", 
+        "b": "Remove impurities", 
+        "c": "Soften water", 
+        "d": "Enhance water color"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "c"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which ions are targeted for removal in the ion exchange process?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sodium ions", 
+        "b": "Chloride ions", 
+        "c": "Calcium and magnesium ions", 
+        "d": "Hydrogen ions"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c"
+    },
+    {
+      "question": "Why is regeneration of the ion exchange resin necessary?",
+      "answers": {
+        "a": "To increase water hardness", 
+        "b": "To prevent scaling", 
+        "c": "To restore resin exchange capacity", 
+        "d": "To enhance water color"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "c"
+    },
+    {
+      "question": "What is the function of the resin in the ion exchange column?",
+      "answers": {
+        "a": "Increase water hardness", 
+        "b": "Attract and exchange ions", 
+        "c": "Filter out impurities", 
+        "d": "Enhance water clarity"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "How is the efficiency of the ion exchange column assessed?",
+      "answers": {
+        "a": "By measuring pH changes", 
+        "b": "Through conductivity testing", 
+        "c": "By analyzing water color", 
+        "d": "By testing for hardness levels"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "What is the purpose of calibrating the ion exchange column before the experiment?",
+      "answers": {
+        "a": "To increase water hardness", 
+        "b": "To ensure optimal column performance", 
+        "c": "To remove resin impurities", 
+        "d": "To reduce water clarity"
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "Which testing method is commonly used to measure water hardness in this experiment?",
+      "answers": {
+        "a": "pH titration", 
+        "b": "Conductivity measurement", 
+        "c": "Turbidity analysis", 
+        "d": "EDTA titration"
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "What is the typical replacement ion introduced during resin regeneration?",
+      "answers": {
+        "a": "Calcium ions", 
+        "b": "Magnesium ions", 
+        "c": "Sodium ions", 
+        "d": "Hydroxide ions"
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "Why is it important to collect a representative water sample before the experiment?",
+      "answers": {
+        "a": "To increase water hardness", 
+        "b": "To adjust pH levels", 
+        "c": "To ensure accurate assessment of initial hardness", 
+        "d": "To reduce ion exchange efficiency"
+      },
+      "correctAnswer": "c"
+    },
+    {
+
+      "question": "What changes might be observed in the effluent as the ion exchange column operates over time?",
+      "answers": {
+        "a": "Decreased hardness", 
+        "b": "Increased turbidity", 
+        "c": "Enhanced color", 
+        "d": "pH elevation"
+      },
+      "correctAnswer": "a"
     }
   ]
-}
