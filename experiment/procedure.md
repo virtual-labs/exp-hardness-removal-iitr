@@ -12,6 +12,20 @@ Follow these steps to determine the removal of hardness of water using an ion ex
 3. **Determination of Total Hardness:**  
    Repeat the above method for hard water sample before and after passing through the column and note the initial and final burette readings.
 
+#### **Slide-1 Procedure**
+1. Add few drops of Erichrome Black T indicator to conical flask.
+2. The colour of solution turns wine red.
+
+#### **Slide-2 Procedure**
+1. Set the normality of titrate(EDTA solution) and volume of titrant(Sample water solution) according to you, click start button.
+2. Fix the nozzle opening size by the nozzle open slider and shake it
+3. Titrate it till the colour changes to peacock blue 
+
+#### **Slide-3 Procedure**
+1. Set the normality of titrate(EDTA solution) and volume of titrant(Sample water solution after ion exchange) according to you, click start button.
+2. Fix the nozzle opening size by the nozzle open slider and shake it
+3. Titrate it till the colour changes to peacock blue
+
 #### **Safety Precautions**
 
 1. Clamp the burette perfect vertically, so that it is easy to read the scale properly.
